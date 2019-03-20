@@ -1,0 +1,16 @@
+<view class="swiperView">
+  <swiper class="swiperHome" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="widthFix" style="width:100%"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="location-wrapper" bindtap='onTapLocation'>
+    <view class="location">
+      <image class="location-icon" src="/imgs/location-icon.png"></image>
+      <view class="location-text">{{city}}</view>
+    </view>
+  </view>

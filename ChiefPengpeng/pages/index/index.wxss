@@ -1,0 +1,23 @@
+.swiperHome {
+  height: 250px;
+}
+
+.location-wrapper{
+  margin-bottom: 60rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.location-icon{
+  margin-left: 8rpx;
+  margin-top: 6rpx;
+  width: 21rpx;
+  height: 30rpx; 
+  position: absolute;   
+}
+
+.location-text{
+  margin-left: 30rpx;
+  position: absolute;   
+}

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/community/community",
+    "pages/message/message",
+    "pages/account/account"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFDA44",
+    "navigationBarTitleText": "烹烹大厨",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#B3B3B3",
+    "selectedColor": "#333333",
+    "backgroundColor": "#FFDA44",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/imgs/tabbarImgs/home.png",
+        "selectedIconPath": "/imgs/tabbarImgs/homeSelected.png"
+      },
+      {
+        "text": "社区",
+        "pagePath": "pages/community/community",
+        "iconPath": "/imgs/tabbarImgs/drinks.png",
+        "selectedIconPath": "/imgs/tabbarImgs/drinksSelected.png"
+      },
+      {
+        "text": "消息  ",
+        "pagePath": "pages/message/message",
+        "iconPath": "/imgs/tabbarImgs/message.png",
+        "selectedIconPath": "/imgs/tabbarImgs/messageSelected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/account/account",
+        "iconPath": "/imgs/tabbarImgs/rings.png",
+        "selectedIconPath": "/imgs/tabbarImgs/ringsSelected.png"
+      }
+    ]
+  }
+}
