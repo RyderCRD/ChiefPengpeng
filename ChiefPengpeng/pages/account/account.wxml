@@ -1,2 +1,1 @@
-<!--pages/account/account.wxml-->
-<text>pages/account/account.wxml</text>
+<button class="btn" bindtap="login">登录/注册</button>

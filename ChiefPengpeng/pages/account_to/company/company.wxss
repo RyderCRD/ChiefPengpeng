@@ -1,0 +1,90 @@
+.content{
+  width: 100%;
+  height: 1600rpx;
+  background-color: #f2f2f2;
+}
+.hr{
+  padding-top: 80rpx;
+}
+.item{
+  margin:0 auto;
+  border: 1px solid #cccccc;
+  height: 80rpx;
+  width: 90%;
+  border-radius: 6rpx;
+  background-color: #ffffff;
+  margin-bottom: 30rpx;
+}
+.item input{
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-left: 20rpx;
+}
+.holder{
+  font-size: 28rpx;
+  color: #999999;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.flex input{
+  width: 600rpx;
+}
+.item switch{
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+.mobileInfo{
+  display: flex;
+  flex-direction: row;
+}
+.mobile{
+  margin: 0 auto;
+  border: 2rpx solid #cccccc;
+  height: 80rpx;
+  width: 50%;
+  border-radius: 6rpx;
+  background-color: #ffffff;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+.mobile input{
+  margin-top: 16rpx;
+  margin-left: 20rpx;
+}
+.code{
+  border: 2rpx solid #cccccc;
+  height: 80rpx;
+  width: 35%;
+  background-color: #efeeec;
+  border-radius: 6rpx;
+  text-align: center;
+  margin-left: 20rpx;
+  line-height: 80rpx;
+  color: #999999;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+  margin-right: 5%;
+}
+.btn{
+  width: 80%;
+  color: #999999;
+  margin-top: 80rpx;
+}
+.xieyi{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  font-size: 26rpx;
+}
+.agree{
+  margin-left: 10rpx;
+  color:#666666;
+}
+.opinion{
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}

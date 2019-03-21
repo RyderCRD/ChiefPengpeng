@@ -21,3 +21,13 @@
   margin-left: 30rpx;
   position: absolute;   
 }
+
+.location{
+  margin:0 auto;
+  border: 1px solid #cccccc;
+  height: 42rpx;
+  width: 90%;
+  border-radius: 6rpx;
+  background-color: #ffffff;
+  margin-top: 30rpx;
+}

@@ -1,66 +1,48 @@
-// pages/community/community.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
+  data:{
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad(){
+    this.typeRefresh("咖喱")
+  },
+  typeRefresh(keyword){
+    wx.request({
+      url: "http://apis.juhe.cn/cook/query",
+      data: {
+        menu:keyword,
+        key:"316d3616b46b72a9bfd14c38682e1aee"
+      },
+      success: res => {
+        let oneNews = []
+        if(res.data.result == null){
+          oneNews = []
+        }else{
+          let result = res.data.result.data
+          console.log(result)
+          let imtro = ""
+          for (let i = 0; i < result.length; i++) {
+            if (result[i].imtro.length>60){
+              imtro = result[i].imtro.substring(0,60) + "...";
+            }else{
+              imtro = result[i].imtro;
+            }
+            oneNews.push({
+              title: result[i].title,
+              firstImage: result[i].albums,
+              intro: imtro,
+              ingredients: result[i].ingredients
+            })
+          }
+          this.setData({
+            oneNews
+          })
+        }
+      },
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  sou:function(e){
+    this.typeRefresh(e.detail.value)
   }
 })

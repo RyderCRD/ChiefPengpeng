@@ -13,7 +13,7 @@ Page({
     circular: true,
     interval: 3000,
     duration: 1000,
-    imgUrls: ["imgs/1.jpg", "imgs/5.jpg", "imgs/3.jpg", "imgs/4.jpg", "imgs/2.jpeg"
+    imgUrls: ["imgs/3.jpg", "imgs/5.jpg", "imgs/1.jpg", "imgs/4.jpg", "imgs/2.jpg"
     ]
   },
 

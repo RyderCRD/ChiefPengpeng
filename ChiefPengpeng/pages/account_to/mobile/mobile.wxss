@@ -1,0 +1,40 @@
+.content{
+  width: 100%;
+  height: 1600rpx;
+  background-color: #f2f2f2;
+}
+.hr{
+  padding-top: 40rpx;
+}
+.numbg{
+  border: 1px solid #cccccc;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+}
+.numbg view{
+  margin-left: 40rpx;
+  margin-top: 28rpx;
+}
+.xieyi{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.agree{
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  color: #666666;
+}
+.opinion{
+  font-size: 26rpx;
+  color: #000000;
+  font-weight: bold;
+}
+.btn{
+  width: 80%;
+  margin-top: 60rpx;
+}

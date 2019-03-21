@@ -1,8 +1,25 @@
-<view class='page_row' bindtap="suo">  
+<view class="content">
+<view class='page_row'>  
   <view class="search">  
     <view class="df search_arr">  
         <icon class="searchIcon" size='20' type='search'></icon>  
-        <input class="input" maxlength="12" placeholder="请输入关键字" value="{{searchValue}}"/>  
+        <input class="input" maxlength="12" bindinput="sou" confirm-type="search" placeholder="请输入关键字" value="{{searchValue}}"/>  
     </view>  
   </view>  
+</view>
+
+<scroll-view class="news-scroll">
+  <view class="news-item" wx:for="{{oneNews}}" wx:key="oneNews">
+    <view class="news-wrapper">
+      <view class="image-wrapper">
+        <view><image class="firstImage" style="width:296rpx;height:220rpx;" src="{{item.firstImage}}" mode="scaleToFill"></image></view>
+      </view>
+      <view class="text-wrapper">
+        <view class="title">{{item.title}}</view>
+        <view class="ingredients">{{item.ingredients}}</view>
+        <view class="intro">{{item.intro}}</view>
+      </view>
+      </view>
+    </view>
+  </scroll-view>
 </view>

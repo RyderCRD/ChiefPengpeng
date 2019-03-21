@@ -1,12 +1,18 @@
+.content{
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
 .search{  
   width: 80%;  
-  margin: 5px 10%;
-} 
+  margin: 10px 10%;
+}
 
 .search_arr {  
   border: 1px solid #d0d0d0;  
   border-radius: 10rpx;  
   margin-left: 20rpx;
+  background-color: #ffffff;
 }  
 
 .search_arr input{  
@@ -35,3 +41,36 @@
   height: 20px;  
   text-align: center;  
 }  
+
+.news-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+}
+
+.text-wrapper{
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+}
+
+.title{
+  margin-bottom: 5rpx;
+}
+
+.ingredients{
+  font-size: 25rpx;
+  opacity: 0.7;
+  margin-bottom: 5rpx;
+}
+
+.intro{
+  font-size: 20rpx;
+  opacity: 0.8;
+}
+
+.firstImage{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  margin-left: 20rpx;
+}

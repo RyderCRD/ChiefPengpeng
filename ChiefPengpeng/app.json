@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/community/community",
     "pages/message/message",
-    "pages/account/account"
+    "pages/account/account",
+    "pages/account_to/company/company",
+    "pages/account_to/login/login",
+    "pages/account_to/mobile/mobile",
+    "pages/account_to/find/find"
   ],
   "permission": {
     "scope.userLocation": {
